@@ -14,7 +14,7 @@ def GetExtent(in_fn):
     ds=None
     return min_x,max_y,max_x,min_y
 outname='S2.tif'
-path=r"D:\YOLO\dqhgewe\S2"
+path=r"D:\S2"
 os.chdir(path)
 in_files=glob.glob("*.tif")
 in_fn=in_files[0]
