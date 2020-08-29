@@ -26,7 +26,7 @@ for in_fn in in_files[1:]:
     max_x=max(max_x,maxx)
     max_y=max(max_y,maxy)
 in_ds=gdal.Open(in_files[0])
-im_bands=4
+im_bands=4 #bands count
 geotrans=list(in_ds.GetGeoTransform())
 width=geotrans[1]
 height=geotrans[5]
