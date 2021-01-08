@@ -2,6 +2,10 @@ from osgeo import gdal
 import os
 import glob
 import math
+
+outname='S2.tif'
+path=r"D:\S2"
+
 def GetExtent(in_fn):
     ds=gdal.Open(in_fn)
     geotrans=list(ds.GetGeoTransform())
@@ -13,8 +17,7 @@ def GetExtent(in_fn):
     min_y=geotrans[3]+ysize*geotrans[5]
     ds=None
     return min_x,max_y,max_x,min_y
-outname='S2.tif'
-path=r"D:\S2"
+
 os.chdir(path)
 in_files=glob.glob("*.tif")
 in_fn=in_files[0]
