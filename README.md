@@ -13,6 +13,3 @@ Useful Python Tools
 
 批量裁剪工具，根据点数据，从栅格中获取固定大小（如1000×1000）的影像，且支持从多个栅格影像中提取
 
-😀mosaic_rs.py : mosaic the rasters with no overlap
-
-影像拼接工具，要求是没有重叠区域的影像，该程序没有羽化、匀色等功能，但是拼接速度很快。
